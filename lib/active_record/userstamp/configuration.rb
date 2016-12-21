@@ -4,20 +4,20 @@ module ActiveRecord::Userstamp::Configuration
   #
   #   By default, this is set to +'User'+.
   def self.default_stamper
-    ActiveRecord::Base.stamper_class_name
+    ApplicaitonRecord.stamper_class_name
   end
 
   # !@attribute [rw] default_stamper
   # @see {.default_stamper}
   def self.default_stamper=(stamper)
-    ActiveRecord::Base.stamper_class_name = stamper
+    ApplicaitonRecord.stamper_class_name = stamper
   end
   self.default_stamper = 'User'.freeze
 
   # @!attribute [r] default_stamper_class
   #   Determines the default model used to stamp other models.
   def self.default_stamper_class
-    ActiveRecord::Base.stamper_class
+    ApplicaitonRecord.stamper_class
   end
 
   # !@attribute [rw] creator_attribute
