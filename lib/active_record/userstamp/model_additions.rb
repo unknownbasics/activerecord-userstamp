@@ -5,6 +5,6 @@ module ActiveRecord::Userstamp::ModelAdditions
   include ActiveRecord::Userstamp::Stamper
 end
 
-ActiveRecord::Base.class_eval do
+ApplicaitonRecord.class_eval do
   include ActiveRecord::Userstamp::ModelAdditions
 end
